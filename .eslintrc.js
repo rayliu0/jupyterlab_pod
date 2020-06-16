@@ -13,7 +13,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/interface-name-prefix': [
-      'error',
+      'warn',
       { prefixWithI: 'always' }
     ],
     '@typescript-eslint/no-unused-vars': ['warn', { args: 'none' }],
@@ -21,12 +21,12 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/quotes': [
-      'error',
+      'warn',
       'single',
       { avoidEscape: true, allowTemplateLiterals: false }
     ],
-    curly: ['error', 'all'],
-    eqeqeq: 'error',
-    'prefer-arrow-callback': 'error'
+    curly: ['warn', 'all'],
+    eqeqeq: 'warn',
+    'prefer-arrow-callback': 'warn'
   }
 };
